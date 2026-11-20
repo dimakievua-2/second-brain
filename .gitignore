@@ -1,0 +1,44 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+secrets/
+*.gpg
+*.key
+*.pem
+credentials*.json
+token*.json
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/
+
+# Data lives in /srv/secondbrain, never in the repo
+storage/
+data/
+*.sqlite
+*.db
+
+# Audit output may contain host details
+audit-*.txt
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Private: lives in ~/Documents/config/secondbrain-private
+private
+CLAUDE.md
+CLAUDE.local.md
+.claude/
