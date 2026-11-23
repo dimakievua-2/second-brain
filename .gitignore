@@ -41,4 +41,4 @@ audit-*.txt
 private
 CLAUDE.md
 CLAUDE.local.md
-.claude/
+.claude
